@@ -1,0 +1,24 @@
+{
+  "name": "detect-devtools",
+  "version": "1.0.0",
+  "description": "Devtool detection based on debugger and webworkers.",
+  "main": "detect-devtools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atdojo/detect-devtools.git"
+  },
+  "keywords": [
+    "detect",
+    "devtools",
+    "browser"
+  ],
+  "author": "atdojo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atdojo/detect-devtools/issues"
+  },
+  "homepage": "https://github.com/atdojo/detect-devtools#readme"
+}
