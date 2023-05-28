@@ -1,6 +1,6 @@
 {
   "name": "detect-devtools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Devtool detection based on debugger and webworkers.",
   "main": "detect-devtools.js",
   "scripts": {
@@ -20,5 +20,5 @@
   "bugs": {
     "url": "https://github.com/atdojo/detect-devtools/issues"
   },
-  "homepage": "https://github.com/atdojo/detect-devtools#readme"
+  "homepage": "https://atdojo.github.io/detect-devtools/"
 }

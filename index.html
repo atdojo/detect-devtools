@@ -20,42 +20,48 @@
             font-family: sans-serif;   
         }
 
-        #detect-devtools-showcase {
+        #detect-devtools-header {
             display: flex;
             justify-content: center;
-            padding: 120px 0;
-            font-size: 1.25rem;
+            padding: 120px 0 8px;
+            font-size: 1.5rem;
+        }
+        #detect-devtools-subheader {
+            display: flex;
+            justify-content: center;
         }
 
+        #links {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        #links a {
+            margin: 0 8px;
+        }
+        
         #is-devtools-open {
             padding: 0 4px;
             font-weight: bold;
         }
 
+        a {
+            text-decoration: none;
+            color: rgb(63, 144, 209);
+        }
+
     </style>
 </head>
 <body>
-    <div id="detect-devtools-showcase">
+    <div id="detect-devtools-header">
         Devtools are <div id="is-devtools-open"></div>
     </div>
-    
-    <section>
-        <pre>
-            <code>
-
-            </code>
-        </pre>
-        <pre>
-            <code>
-                
-            </code>
-        </pre>
-        <pre>
-            <code>
-                
-            </code>
-        </pre>
-    </section>
+    <div id="detect-devtools-subheader">Devtool detection based on debugger and webworkers</div>
+    <div id="links">
+        <a href="https://atdojo.github.io/detect-devtools/">GitHub</a>
+        <a href="https://www.npmjs.com/package/detect-devtools/">NPM</a>
+    </div>
     <script type="module">
         import { detectDevtools } from "./detect-devtools.js"
         const isDevtoolsOpen = document.getElementById('is-devtools-open')
