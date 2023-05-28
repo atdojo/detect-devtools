@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #0b0f14;
+            color: #d6d6d6;
+            font-family: sans-serif;   
+        }
+
+        #detect-devtools-showcase {
+            display: flex;
+            justify-content: center;
+            padding: 120px 0;
+            font-size: 1.25rem;
+        }
+
+        #is-devtools-open {
+            padding: 0 4px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="detect-devtools-showcase">
+        Devtools are <div id="is-devtools-open"></div>
+    </div>
+    
+    <section>
+        <pre>
+            <code>
+
+            </code>
+        </pre>
+        <pre>
+            <code>
+                
+            </code>
+        </pre>
+        <pre>
+            <code>
+                
+            </code>
+        </pre>
+    </section>
+    <script type="module">
+        import { detectDevtools } from "./detect-devtools.js"
+        const isDevtoolsOpen = document.getElementById('is-devtools-open')
+        detectDevtools.addEventListener("change", (e) => {
+            if (e.detail.isOpen) {
+                isDevtoolsOpen.innerText = 'Open'
+                isDevtoolsOpen.style.color = 'rgb(63, 144, 209)'
+            } else {
+                isDevtoolsOpen.innerText = 'Closed'
+                isDevtoolsOpen.style.color = "#F97583"
+            }
+        })
+        detectDevtools.startDetectDevtools()
+    </script>
+</body>
+</html>
