@@ -6,7 +6,7 @@ const defaultConfig = {
 }
 
 const info = {
-    isOpen: undefined
+    isOpen: null
 }
 
 let updateDevtoolsInterval

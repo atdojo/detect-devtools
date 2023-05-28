@@ -10,6 +10,7 @@ Or download  [detect-devtools.js](https://github.com/atdojo/detect-devtools/blob
 ```html
 <script type="module">
     import { detectDevtools } from './detect-devtools.js'
+    // "change" will be called on every detectDevtools.isOpen change and initially
     detectDevtools.addEventListener("change", (e) => {
         console.log("detectDevtools.isOpen " + e.detail.isOpen)
     })

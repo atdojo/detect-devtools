@@ -1,8 +1,9 @@
 {
   "name": "detect-devtools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Devtool detection based on debugger and webworkers.",
   "main": "detect-devtools.js",
+  "types": "detect-devtools.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
