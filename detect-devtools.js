@@ -69,6 +69,8 @@ function startDetectDevtools(config) {
             )
         }
     })
+
+    lastPulseReceivedFromWebworker = Date.now()
 }
 
 function stopDetectDevtools() {

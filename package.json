@@ -1,6 +1,6 @@
 {
   "name": "detect-devtools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Devtool detection based on debugger and webworkers.",
   "main": "detect-devtools.js",
   "types": "detect-devtools.d.ts",
